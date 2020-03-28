@@ -1,3 +1,5 @@
+from flask import Flask
+
 def github_webhook():
     """Github webhook trigger."""
 
