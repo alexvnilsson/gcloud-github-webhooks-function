@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+[[ "$VIRTUAL_ENV" == "" ]]; INVENV=$?
+
+if [[ $INVENV -ne 1 ]]; then
+    source .env/bin/activate
+fi
+
+(pip freeze --local | grep -v "pkg-resources") > requirements.txt
