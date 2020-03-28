@@ -1,0 +1,7 @@
+[GCloudFunction]
+Name=github-webhooks-function
+Project=alexvnilsson
+Region=europe-west3
+SourceUrl=https://source.developers.google.com/projects/alexvnilsson/repos/github-webhooks/moveable-aliases/master/paths//
+Runtime=python37
+Args=--trigger-http,--allow-unauthenticated
